@@ -1,2 +1,6 @@
-A simple DSL for making console Quiz games.
+A simple Domain Specific Language for making console Quiz games. This was one of the projects of the DSL Course at Informatics Center of Federal University of Pernambuco (https://sites.google.com/a/cin.ufpe.br/if734/).
+
+Inside Model folder there are a bunch of generated files. The ones we made and really matter are Model/v1.quiz/src/v1/quiz/Quiz.xtext which is the DSL model definition and Model/v1.quiz/src/v1/quiz/generator/QuizGenerator.xtend which is the game code generator.
+The folder ExampleProject contains an application of the DSL: an implementation of a simple quiz game about The Beatles.
+
 Made with Xtext 2.1: http://www.eclipse.org/Xtext/documentation/2_1_0/Xtext%202.1%20Documentation.pdf
