@@ -1,0 +1,30 @@
+grammar v1.quiz.Quiz with org.eclipse.xtext.common.Terminals
+
+generate quiz "http://www.quiz.v1/Quiz"
+
+QuizGame:
+	'quizGame' name=ID 'by' author=ID '{'
+		elements+=Quiz+
+	'}'
+;
+
+Quiz:
+	type=Type 'question' name=ID '{'
+		'text' ':' text=STRING ';'
+		'score' ':' score=INT ';'
+		'choices' '{' elements+=Choice+ '}'
+		('hint' ':' hint=STRING ';')?
+	'}'
+;
+
+Choice:
+	text=STRING '->' correct=Bool ';'
+;
+
+enum Type:
+	multiChoice | singleChoice 
+;
+
+Bool:
+	'true' | 'false'
+;

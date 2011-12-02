@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://www.quiz.v1/Quiz" 
+       class = "v1.quiz.quiz.QuizPackage"
+       genModel = "v1/quiz/Quiz.genmodel" /> 
+	
+  </extension>
+
+
+
+
+
+</plugin>

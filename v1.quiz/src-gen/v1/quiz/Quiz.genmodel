@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/v1.quiz/src-gen"
+    editDirectory="/v1.quiz.edit/src" editorDirectory="/v1.quiz.editor/src" modelPluginID="v1.quiz"
+    forceOverwrite="true" modelName="Quiz" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="v1.quiz.edit" editorPluginID="v1.quiz.editor">
+  <genPackages prefix="Quiz" basePackage="v1.quiz" disposableProviderFactory="true"
+      ecorePackage="platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Type">
+      <genEnumLiterals ecoreEnumLiteral="platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Type/multiChoice"/>
+      <genEnumLiterals ecoreEnumLiteral="platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Type/singleChoice"/>
+    </genEnums>
+    <genClasses ecoreClass="platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//QuizGame">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//QuizGame/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//QuizGame/author"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//QuizGame/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Quiz">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Quiz/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Quiz/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Quiz/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Quiz/score"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Quiz/elements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Quiz/hint"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Choice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Choice/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/v1.quiz/src-gen/v1/quiz/Quiz.ecore#//Choice/correct"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
