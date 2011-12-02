@@ -1,0 +1,45 @@
+quizGame TheBeatlesQuiz by fjsj_ncs {
+	singleChoice question NameOfFirstAlbum {
+		text: "What is the name of the first Beatles album?";  
+		score: 300;  
+		choices {  
+			"Let it be" -> false;   
+			"Please Please Me" -> true;
+			"With The Beatles" -> false;      
+		}
+	} 
+	multiChoice question ExBeatles {
+		text: "Which of these names are of past Beatles members?";  
+		score: 100; 
+		choices {  
+			"Stuart Sutcliffe" -> true;   
+			"Pete Best" -> true;
+			"George Harrison" -> false;
+		    "Brian Epstein" -> false;
+		} 
+		hint: "They are the ones who quit before the band launched the first album.";
+	}
+	singleChoice question Producer {  
+		text: "Who is considered the best Beatles producer?";  
+		score: 100;  
+		choices {  
+			"George Martin" -> true;   
+			"Bert Kaempfert" -> false; 
+			"Neil Aspinall" -> false;
+		    "Phil Spector" -> false;
+		} 
+		hint: "He is still alive."; 
+	}
+	singleChoice question LastLivePerformance {
+		text: "Which was the year of the last Beatles live performance?"; 
+		score: 100;
+		choices {
+			"1965" -> false;
+			"1966" -> false;
+			"1967" -> false;
+			"1968" -> false;
+			"1969" -> true;
+		}
+		hint: "It was on a rooftop in London.";
+	}
+} 
